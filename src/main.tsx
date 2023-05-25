@@ -9,6 +9,7 @@ import Home from './pages/home/Home.tsx'
 import CandidateView from './pages/candidate-view/CandidateView.tsx'
 import ListOffers from './pages/list-offers/ListOffers.tsx'
 import CandidateOffers from './pages/candidate-offers/CandidateOffers.tsx'
+import CandidateSkills from './pages/candidate-skills/CandidateSkills.tsx'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           <Route path="/list-candidates" element={<ListCandidates />} />
           <Route path="/list-offers" element={<ListOffers />} />
           <Route path="/candidate-offers/:id" element={<CandidateOffers />} />
+          <Route path="/candidate-skills/:id" element={<CandidateSkills />} />
         </Route>
       </Routes>
     </BrowserRouter>

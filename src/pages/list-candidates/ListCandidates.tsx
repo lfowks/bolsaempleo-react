@@ -30,7 +30,7 @@ const ListCandidates = () => {
                             <th>{candidate.summary}</th>
                             <th className="action-buttons">
                             <Link to={`/candidate/${candidate.id}`}><button title="View and Edit" ><i className="bi bi-pencil-fill"></i></button></Link>
-                                <button title="Edit Skills"><i className="bi bi-clipboard2-plus-fill"></i></button>
+                            <Link to={`/candidate-skills/${candidate.id}`}><button title="Edit Skills"><i className="bi bi-clipboard2-plus-fill"></i></button></Link>                                
                             </th>
                         </tr>
                     ))}
